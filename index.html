@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Sergey Anasov | Curriculum Vitae</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="profile.png" />
+    <link rel="icon" type="image/jpeg" href="profile.png"/>
 </head>
 <body>
-<div class="content">
-    <div class="intro">
-        <span>Привет!)</span><br/>
-        <span>Меня зовут Анасов Сергей. Я разрабатываю сервисы на java более 9 лет.</span><br/>
-        <span>Мое резюме <a href=""><span class="highlight-red">тут</span></a>.</span>
-    </div>
-    <table>
-        <tr>
-            <td rowspan="2">
+<div id="app">
+    <div class="content">
+        <div class="profile">
+            <div>
                 <img src="profile.png" alt="Sergey Anasov" title="Sergey Anasov"/>
-            </td>
-            <td>
-                <span>telegram:</span>
-            </td>
-            <td>
-                <a href="https://t.me/sergisey">@sergisey</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>email:</span>
-            </td>
-            <td>
-                <a href="mailto:sanasov@yandex.ru">sanasov@yandex.ru</a>
-            </td>
-
-        </tr>
-    </table>
+            </div>
+            <div class="contact">
+                <p class="telega">telegram: <a href="https://t.me/sergisey">@sergisey</a></p>
+                <p class="email">email: <a href="mailto:sanasov@yandex.ru">sanasov@yandex.ru</a></p>
+            </div>
+        </div>
+        <div class="intro">
+            <span>Привет!) Меня зовут Анасов Сергей. Мне 31 год.</span><br/>
+            <span>Я разрабатываю сервисы на java более {{new Date().getFullYear() - 2014}} лет.</span><br/>
+            <span>С августа 2019 года работаю в <a href="https://domclick.ru"><span>Домклик</span></a>. Там я отвечаю за сервисы неипотечных продуктов,
+                например<br/> <a href="https://my.domclick.ru/easy-deal"><span class="highlight-green"> "Сделка за свои средства" </span></a></span><br/>
+            <span>Мои пул-реквесты также есть в сервисах платформы и смежных команд Домклика.</span><br/><br/>
+            <span>Основные используемые технологии: <b>kotlin, spring webflux, postgres, rabbitmq, k8s, grafana, kibana</b></span><br/>
+            <span>Подробности в <a href=""><span class="highlight-red">резюме</span></a></span>
+        </div>
+    </div>
 </div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {},
+        computed: {},
+        methods: {}
+    })
+</script>
 </body>
 </html>
