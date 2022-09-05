@@ -11,8 +11,8 @@ span {
 }
 
 img {
-    width: 150px;
-    border-radius: 80px;
+    width: 300px;
+    border-radius: 150px;
 }
 
 .telega {
@@ -70,7 +70,7 @@ div.profile div {
 }
 
 .intro {
-    margin: 150px 0 90px 0;
+    margin: 50px 0 90px 0;
     text-align: center;
 }
 
