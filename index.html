@@ -5,29 +5,31 @@
     <title>Sergey Anasov | Curriculum Vitae</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="profile.png"/>
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="icon" type="image/jpeg" href="static/img/profile.png"/>
 </head>
 <body>
 <div id="app">
-    <div class="content">
-        <div class="profile">
-            <div>
-                <img src="profile.png" alt="Sergey Anasov" title="Sergey Anasov"/>
-            </div>
-            <div class="contact">
-                <h3 class="telega">telegram: <a href="https://t.me/sergisey"><b>@sergisey</b></a></h3>
-                <h3 class="email">email: <a href="mailto:sanasov@yandex.ru"><b>sanasov@yandex.ru</b></a></h3>
+    <header>
+        <div class="profile_photo"><img src="static/img/profile.png" alt="Sergey Anasov" title="Sergey Anasov"/></div>
+        <div class="profile_info">
+            <div class="name"><span class="last">Анасов Сергей, 31 год</span></div>
+            <div class="job">Senior Java Developer &#8226; Team lead</div>
+            <div class="info">
+                <img src="static/img/icons/email.png" alt="email">sanasov@yandex.ru&nbsp;
+                <img src="static/img/icons/mobile.png" alt="telegram">Telegram: <a
+                    href="https://t.me/sergisey">@sergisey</a>&nbsp;
             </div>
         </div>
+    </header>
+    <div class="content">
         <div class="intro">
-            <span>Привет!) Меня зовут Анасов Сергей. Мне 31 год.</span><br/>
-            <span>Я занимаюсь коммерческой разработкой на java более {{new Date().getFullYear() - 2014}} лет.</span><br/>
+            <span>Привет!) Я занимаюсь коммерческой разработкой на java более {{new Date().getFullYear() - 2014}} лет.</span><br/>
             <span>С августа 2019 года работаю в <a href="https://domclick.ru"><span>Домклик</span></a>. Там я отвечаю за сервисы неипотечных продуктов,
                 например<br/> <a href="https://my.domclick.ru/easy-deal"><span class="highlight-green"> "Сделка за свои средства" </span></a></span><br/>
-            <span>Мои пул-реквесты также есть в сервисах платформы и смежных команд Домклика.</span><br/><br/>
-            <span>Основные используемые технологии: <b>kotlin, spring webflux, postgres, rabbitmq, k8s, grafana, kibana</b></span><br/>
-            <span>Подробности в <a href=""><span class="highlight-red">резюме</span></a></span>
+            <span>Также регулярно делаю пул-реквесты в сервисы платформы и смежных команд Домклика.</span><br/><br/>
+            <span>Основной стек: <b>kotlin, spring webflux, postgres, docker, rabbitmq, k8s, grafana, kibana</b></span><br/>
+            <span>Подробности в <a href="cv.html"><span class="highlight-red">резюме</span></a></span>
         </div>
     </div>
 </div>
