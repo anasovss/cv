@@ -16,7 +16,6 @@ header {
     padding-top: 20pt;
     text-align: center;
     margin-bottom: 15pt;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +100,6 @@ span {
 }
 
 a {
-    text-decoration: none;
     color: #000;
     font-weight: bold;
     transition: 0.3s;
@@ -170,6 +168,8 @@ div.profile_photo div {
     background-color: darkred;
     color: white;
     transition: 0.3s;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .intro span.highlight-red:hover {
@@ -182,6 +182,8 @@ div.profile_photo div {
     background-color: #52b374;
     color: white;
     transition: 0.3s;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .intro span.highlight-green:hover {
